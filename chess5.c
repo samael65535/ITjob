@@ -114,12 +114,14 @@ int judge(int row, int col, int flag) /* 判断是否获胜, 黑1 平0 白-1 */
     else
       break;
   }
+  j = col + 1;
   for(i = row+1; i <= row_new_down; i++){
     if(table[i][j--] == chess)
       count++;
     else
       break;
   }
+  
   if(count == 5)
     return flag;
   return 0;
