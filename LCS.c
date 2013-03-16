@@ -1,5 +1,8 @@
 #include<stdio.h>
 #include<string.h>
+/*
+ * LCS 使用二维数组取最大公共子串
+ */
 int count[256][256];
 int main()
 {
