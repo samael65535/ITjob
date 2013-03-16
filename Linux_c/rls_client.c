@@ -40,7 +40,7 @@ int main(int ac, char *argv[]){
   if(write(sock_id, "\n", 1) == -1)
     perror("write");
   printf("%d\n", sock_id);
-  int  n_read;
+  int  n_read;                  /* 不是字符型, 注意!  */
   while((n_read = read(sock_id, buffer, BUFSIZ)) > 0){
     printf("%d\n", n_read);
     if(write(1, buffer, n_read) == -1)
