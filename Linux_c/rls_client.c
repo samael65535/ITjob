@@ -11,6 +11,10 @@
 #define PORTNUM 6180
 #define HOSTLEN 256
 
+/*
+ * 远程调用 服务器的目录并显示
+ * 客户端 
+ */
 int main(int ac, char *argv[]){
   struct sockaddr_in saddr;
   struct hostent *hp;

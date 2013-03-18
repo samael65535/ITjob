@@ -10,7 +10,9 @@
 
 #define PORTNUM 6180
 #define HOSTLEN 256
-
+/*
+* 远程LS 服务端
+*/
 void sanitize(char *str)
 {
   char *src, *dest;
